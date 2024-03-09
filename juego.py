@@ -32,4 +32,19 @@ except pygame.error as e:
 baterect = bate.get_rect()
 baterect.move_ip(240,450)
 
+fuente = pygame.font.Font(None, 36)
+
+jugando = True
+while jugando:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            jugando = False
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        baterect = baterect.move(-3,0)
+    if keys[pygame.K_RIGHT]:
+        baterect = baterect.move(3,0)
+    if baterect.colliderect(ballrect):
+        speed[1] = -speed[1]
 
