@@ -48,3 +48,27 @@ while jugando:
     if baterect.colliderect(ballrect):
         speed[1] = -speed[1]
 
+    
+    ballrect = ballrect.move(speed)
+    
+    if ballrect.left < 0 or ballrect.right > ventana.get_width():
+        speed[0] = -speed[0]
+
+    if ballrect.top < 0: 
+        speed[1] = -speed[1]
+
+    if ballrect.bottom > ventana.get_height():
+        texto = fuente.render("Game Over", True, (125,125,125))
+        texto_rect = texto.get_rect()
+        texto_x = ventana.get_width() / 2 - texto_rect.width / 2
+        texto_y = ventana.get_height() / 2 - texto_rect.height / 2
+        ventana.blit(texto, [texto_x, texto_y])
+    else:
+        ventana.fill((252, 243, 207))
+        ventana.blit(ball, ballrect)
+        ventana.blit(bate, baterect)
+
+    pygame.display.flip()
+    pygame.time.Clock().tick(60)
+
+pygame.quit()
