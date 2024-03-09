@@ -5,7 +5,7 @@ import sys
 pygame.init()
 
 ventana = pygame.display.set_mode((640,480))
-pygame.display.set_caption("Ejemplo 4")
+pygame.display.set_caption("Pong")
 
 # Intenta cargar la imagen de la pelota
 try:
