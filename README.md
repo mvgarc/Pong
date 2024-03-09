@@ -16,5 +16,3 @@ Dibujo en Pantalla: Dibuja el fondo y las imágenes en la ventana del juego.
 Control de Velocidad: Utiliza pygame.time.Clock().tick(60) para controlar la velocidad del bucle y mantener una tasa de cuadros por segundo (FPS) de 60.
 
 Cierre del Juego: Al salir del bucle principal, cierra Pygame.
-
-Puedes copiar y pegar este código en el README de tu proyecto junto con las imágenes "ball.png" y "bate.png" en la misma carpeta que el script. Recuerda adaptar la explicación según las necesidades específicas de tu proyecto.
