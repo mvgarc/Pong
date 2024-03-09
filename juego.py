@@ -26,11 +26,12 @@ ballrect.move_ip(0, 0)
 
 # Intenta cargar la imagen del bate
 try:
-    bate = pygame.image.load("bate.png")
+    ball = pygame.image.load("ruta/del/archivo/ball.png")  # Reemplaza "ruta/del/archivo/" con la ruta correcta
 except pygame.error as e:
-    print("Error cargando bate.png:", e)
+    print("Error cargando ball.png:", e)
     pygame.quit()
     sys.exit()
+
 
 # Obtiene el rectángulo del bate
 baterect = bate.get_rect()
