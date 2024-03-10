@@ -7,7 +7,7 @@ pygame.init()
 
 # Configuración de la ventana del juego
 ventana = pygame.display.set_mode((640, 480))
-pygame.display.set_caption("Ejemplo 4")
+pygame.display.set_caption("Pong")
 
 # Intenta cargar la imagen de la pelota
 try:
@@ -26,9 +26,9 @@ ballrect.move_ip(0, 0)
 
 # Intenta cargar la imagen del bate
 try:
-    ball = pygame.image.load("ruta/del/archivo/ball.png")  # Reemplaza "ruta/del/archivo/" con la ruta correcta
+    bate = pygame.image.load("bate.png")  # Reemplaza "ruta/del/archivo/" con la ruta correcta
 except pygame.error as e:
-    print("Error cargando ball.png:", e)
+    print("Error cargando bate.png:", e)
     pygame.quit()
     sys.exit()
 
