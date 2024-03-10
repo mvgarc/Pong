@@ -1,18 +1,33 @@
-# Pong
-Juego de Pong con pygame
+# Pong Game with Pygame
 
-Inicialización de Pygame: Importa la biblioteca Pygame y realiza la inicialización necesaria.
+Este es un juego Pong simple implementado en Python con Pygame.
 
-Configuración de la Ventana: Configura la ventana del juego con un tamaño de 640x480 píxeles y un título "Pong".
+## Requisitos
 
-Carga de Imágenes: Intenta cargar las imágenes "ball.png" y "bate.png". Si hay algún error durante la carga, muestra un mensaje de error, cierra Pygame y termina el programa.
+- Python 3.11
+- Pygame 2.5.2 (instalable con `pip install pygame`)
 
-Rectángulos y Velocidad: Define rectángulos para la pelota y el bate, así como la velocidad inicial de la pelota.
+## Instrucciones de Uso
 
-Bucle Principal del Juego: Inicia un bucle principal que controla la lógica del juego. Maneja eventos, como cerrar la ventana o presionar teclas. Mueve el bate, verifica colisiones y actualiza la posición de la pelota.
+1. Asegúrate de tener Python instalado en tu sistema.
+2. Instala Pygame ejecutando el siguiente comando en tu terminal o línea de comandos:
+   ```bash
+   pip install pygame
 
-Dibujo en Pantalla: Dibuja el fondo y las imágenes en la ventana del juego.
+## Clona este repositorio o descarga los archivos del juego.
+Ejecuta el juego usando el siguiente comando:
+python pong_game.py
 
-Control de Velocidad: Utiliza pygame.time.Clock().tick(60) para controlar la velocidad del bucle y mantener una tasa de cuadros por segundo (FPS) de 60.
+## Contenido del Repositorio
+pong.py: El script principal del juego.
+ball.png: Imagen de la pelota.
+bate.png: Imagen del bate.
+fondo.png: Imagen de fondo.
+icono.png: Icono de la ventana del juego.
 
-Cierre del Juego: Al salir del bucle principal, cierra Pygame.
+## Notas
+Este juego fue creado como parte de un ejercicio de aprendizaje y puede mejorarse y expandirse.
+Si encuentras problemas o tienes sugerencias, no dudes en crear un problema o enviar una solicitud de extracción.
+
+## Licencia
+Este proyecto está bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
