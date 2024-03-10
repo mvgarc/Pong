@@ -19,11 +19,11 @@ Ejecuta el juego usando el siguiente comando:
 python pong.py
 
 ## Contenido del Repositorio
-pong.py: El script principal del juego.
-ball.png: Imagen de la pelota.
-bate.png: Imagen del bate.
-fondo.png: Imagen de fondo.
-icono.png: Icono de la ventana del juego.
+- pong.py: El script principal del juego.
+- ball.png: Imagen de la pelota.
+- bate.png: Imagen del bate.
+- fondo.png: Imagen de fondo.
+- icono.png: Icono de la ventana del juego.
 
 ## Notas
 Este juego fue creado como parte de un ejercicio de aprendizaje y puede mejorarse y expandirse.
