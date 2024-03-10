@@ -20,9 +20,9 @@ python pong.py
 
 ## Contenido del Repositorio
 - pong.py: El script principal del juego.
-- ball.png: Imagen de la pelota.
+- ball.png: Imagen de la pelota (woody, la cambie a ultimo momento).
 - bate.png: Imagen del bate.
-- fondo.png: Imagen de fondo.
+- fondo.jpg: Imagen de fondo.
 - icono.png: Icono de la ventana del juego.
 
 ## Notas
