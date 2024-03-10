@@ -5,6 +5,13 @@ import sys
 # Inicialización de Pygame
 pygame.init()
 
+# Carga la imagen para el icono de la ventana
+try:
+    icono = pygame.image.load("icono.png")
+    pygame.display.set_icon(icono)
+except pygame.error as e:
+    print("Error cargando icono.png:", e)
+
 # Configuración de la ventana del juego
 ventana = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Pong")
