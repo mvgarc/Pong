@@ -16,7 +16,7 @@ Este es un juego Pong simple implementado en Python con Pygame. Con temática de
 
 ## Clona este repositorio o descarga los archivos del juego.
 Ejecuta el juego usando el siguiente comando:
-python pong_game.py
+python pong.py
 
 ## Contenido del Repositorio
 pong.py: El script principal del juego.
