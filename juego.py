@@ -26,16 +26,26 @@ ballrect.move_ip(0, 0)
 
 # Intenta cargar la imagen del bate
 try:
-    bate = pygame.image.load("bate.png")  # Reemplaza "ruta/del/archivo/" con la ruta correcta
+    bate = pygame.image.load("bate.png")
 except pygame.error as e:
     print("Error cargando bate.png:", e)
     pygame.quit()
     sys.exit()
 
-
 # Obtiene el rectángulo del bate
 baterect = bate.get_rect()
 baterect.move_ip(240, 450)
+
+# Carga la imagen de fondo
+try:
+    fondo = pygame.image.load("fondo.jpg")
+except pygame.error as e:
+    print("Error cargando fondo.png:", e)
+    pygame.quit()
+    sys.exit()
+
+# Obtiene el rectángulo de la imagen de fondo
+fondo_rect = fondo.get_rect()
 
 # Configuración de la fuente para el texto en pantalla (tamaño 36)
 fuente = pygame.font.Font(None, 36)
@@ -70,14 +80,14 @@ while jugando:
 
     # Si la pelota toca el borde inferior, muestra "Game Over"
     if ballrect.bottom > ventana.get_height():
-        texto = fuente.render("Game Over", True, (125, 125, 125))
+        texto = fuente.render("Game Over", True, (10, 10, 10))
         texto_rect = texto.get_rect()
         texto_x = ventana.get_width() / 2 - texto_rect.width / 2
         texto_y = ventana.get_height() / 2 - texto_rect.height / 2
         ventana.blit(texto, [texto_x, texto_y])
     else:
         # Dibuja el fondo y las imágenes (pelota y bate)
-        ventana.fill((252, 243, 207))
+        ventana.blit(fondo, fondo_rect)  # Dibuja el fondo antes de las otras imágenes
         ventana.blit(ball, ballrect)
         ventana.blit(bate, baterect)
 
