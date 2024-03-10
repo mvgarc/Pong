@@ -1,4 +1,4 @@
-# Pong Game with Pygame
+# Pong Game con Pygame
 
 Este es un juego Pong simple implementado en Python con Pygame. Con temática de Toy Story.
 
