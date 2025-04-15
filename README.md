@@ -1,33 +1,42 @@
-# Pong Game con Pygame
 
-Este es un juego Pong simple implementado en Python con Pygame. Con temática de Toy Story.
+# 🎮 Pong Game con temática Toy Story
 
-## Requisitos
+Este proyecto es una recreación del clásico juego Pong, desarrollado en Python utilizando la librería **Pygame**. Cuenta con una divertida temática basada en *Toy Story*.
+
+## 📦 Requisitos
 
 - Python 3.11
-- Pygame 2.5.2 (instalable con `pip install pygame`)
+- Pygame 2.5.2  
+  Puedes instalarlo ejecutando:
 
-## Instrucciones de Uso
+  ```bash
+  pip install pygame
+  ```
 
-1. Asegúrate de tener Python instalado en tu sistema.
-2. Instala Pygame ejecutando el siguiente comando en tu terminal o línea de comandos:
+## 🚀 Instrucciones de Uso
+
+1. Asegúrate de tener Python instalado.
+2. Instala las dependencias con el comando mencionado arriba.
+3. Clona este repositorio o descarga los archivos manualmente.
+4. Ejecuta el juego con:
+
    ```bash
-   pip install pygame
+   python pong.py
+   ```
 
-## Clona este repositorio o descarga los archivos del juego.
-Ejecuta el juego usando el siguiente comando:
-python pong.py
+## 📁 Contenido del Repositorio
 
-## Contenido del Repositorio
-- pong.py: El script principal del juego.
-- ball.png: Imagen de la pelota (woody, la cambie a ultimo momento).
-- bate.png: Imagen del bate.
-- fondo.jpg: Imagen de fondo.
-- icono.png: Icono de la ventana del juego.
+- `pong.py`: Script principal del juego.
+- `ball.png`: Imagen de la pelota (actualmente es Woody).
+- `bate.png`: Imagen del bate.
+- `fondo.jpg`: Imagen de fondo del juego.
+- `icono.png`: Icono de la ventana del juego.
 
-## Notas
-Este juego fue creado como parte de un ejercicio de aprendizaje y puede mejorarse y expandirse.
-Si encuentras problemas o tienes sugerencias, no dudes en crear un problema o enviar una solicitud de extracción.
+## 📝 Notas
 
-## Licencia
-Este proyecto está bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
+Este juego fue desarrollado como parte de un ejercicio de aprendizaje. Está abierto a mejoras y nuevas funcionalidades.  
+¡Se aceptan sugerencias, pull requests o issues!
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más información.
